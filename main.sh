@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Проверяем наличие исходной папки
-if [ -d "/storage/emulated/0/Android/data/com.foxdebug.acodefree/files/plugins/" ]
+if [ -d "Android/data/com.foxdebug.acodefree/files/plugins/" ]
 then
     # Копируем файлы из исходной папки в целевую папку
-    cp -r /storage/emulated/0/Android/data/com.foxdebug.acodefree/files/plugins/* /storage/emulated/0/Download/pluginsAcode/
+    cp -r Android/data/com.foxdebug.acodefree/files/plugins/* Download/pluginsAcode/
     
     echo "Файлы успешно скопированы."
 else
